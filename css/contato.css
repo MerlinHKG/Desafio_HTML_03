@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  border: 0;
+}
+body {
+  background: linear-gradient(45deg, #000000, #6dfbe3);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  min-width: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background: rgb(255, 255, 255);
+  max-width: 350px;
+  min-height: 500px;
+  padding: 30px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  position: relative;
+  top: 100px;
+}
+h2 {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 175px;
+  bottom: 3px;
+  left: 0;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #000000, #6dfbe3);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+}
+
+.input-field {
+  position: relative;
+}
+
+form .input-field {
+  padding: 0 0 10px;
+}
+
+.input-field:hover {
+  border-bottom: solid 1px #6dfbe3;
+}
+
+.input-field input {
+  outline: none;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.input-field input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+form .input-area {
+  padding: 0px 0px 10px;
+  border: none;
+  resize:none;
+  margin: 15px 48px;
+}
+
+.input-area:hover {
+  border-bottom: solid 1px #6dfbe3;
+}
+
+.input-area textarea {
+  outline: none;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.7);
+  resize:none;
+}
+
+.input-area textarea::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+form input[type="button"] {
+  margin-top: 2rem;
+  padding: 0.4rem;
+  background: linear-gradient(to right, #000000, #6dfbe3);
+  cursor: pointer;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 300;
+  border-radius: 4px;
+  transition: all 0.3 ease;
+}
+
+form input[type="button"]:hover {
+  letter-spacing: 0.5px;
+  background: linear-gradient(to left, #000000, #6dfbe3);
+}
+
+textarea {
+resize:none;
+}

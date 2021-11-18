@@ -1,0 +1,21 @@
+body {
+  background: linear-gradient(45deg, #000000, #6dfbe3);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  min-width: 100vh;
+}
+.meme {
+  background-image: url("../img/memeGato.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 560px;
+  height: 560px;
+}
+h1 {
+  font-weight: 600;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
